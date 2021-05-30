@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        var broj_1 = prompt("Unesite prvi broj:");
+        var znak = prompt("Unesite znak operacije koju zelite da izvrsite:");
+        var broj_2 = prompt("Unesite drugi broj:");
+        var rezultat;
+
+        if (znak == "+") {
+            rezultat = parseInt(broj_1) + parseInt(broj_2);
+            alert("Rezultat je :" + rezultat);
+
+        } else if (znak == "-") {
+            rezultat = parseInt(broj_1) - parseInt(broj_2);
+            alert("Rezultat je :" + rezultat);
+
+        } else if (znak == "*") {
+            rezultat = parseInt(broj_1) * parseInt(broj_2);
+            alert("Rezultat je :" + rezultat);
+
+        } else if (znak == "/") {
+            rezultat = parseInt(broj_1) / parseInt(broj_2);
+            alert("Rezultat je :" + rezultat);
+
+        } else {
+            document.write("Greska");
+        }
+
+    </script>
+</body>
+
+</html>
